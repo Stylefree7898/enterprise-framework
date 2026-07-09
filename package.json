@@ -1,0 +1,33 @@
+{
+  "name": "symulate-enterprise-framework",
+  "version": "1.0.0",
+  "description": "Enterprise Playwright Automation Framework for Symulate",
+  "private": true,
+  "scripts": {
+    "test": "playwright test",
+    "headed": "playwright test --headed",
+    "debug": "playwright test --debug",
+    "ui": "playwright test --ui",
+    "smoke": "playwright test tests/smoke",
+    "regression": "playwright test tests/regression",
+    "api": "playwright test tests/api",
+    "report": "playwright show-report reports/html",
+    "trace": "playwright show-trace",
+    "install:browsers": "playwright install",
+    "clean": "rimraf reports test-results",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@faker-js/faker": "^9.9.0",
+    "axios": "^1.11.0",
+    "dotenv": "^17.2.2"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.61.1",
+    "@types/node": "^24.3.0",
+    "cross-env": "^10.0.0",
+    "rimraf": "^6.0.1",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.9.2"
+  }
+}
